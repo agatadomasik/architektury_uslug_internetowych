@@ -1,0 +1,25 @@
+# Utwórz nowy gatunek
+POST http://localhost:8080/api/genres
+Content-Type: application/json
+
+{
+  "name": "Fantasy",
+  "description": "A genre full of magical elements"
+}
+
+# Pobierz wszystkie gatunki
+GET http://localhost:8080/api/genres
+
+# Utwórz nową książkę (z nazwą gatunku)
+POST http://localhost:8080/api/books
+Content-Type: application/json
+
+{
+  "title": "1984",
+  "author": "George Orwell",
+  "publicationYear": 1949,
+  "genre": "Classics"
+}
+
+# Pobierz wszystkie książki
+GET http://localhost:8080/api/books

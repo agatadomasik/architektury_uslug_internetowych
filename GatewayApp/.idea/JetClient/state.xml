@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JetClientState">
+    <option name="draftsState">
+      <draftsState>
+        <option name="requests">
+          <list>
+            <requestState>
+              <option name="id" value="2c789c00-dcdb-4e90-ac66-732eda452bdb" />
+              <option name="method" value="GET" />
+              <option name="name" value="FetchAllGenres" />
+              <option name="url" value="http://localhost:8080/api/genres" />
+            </requestState>
+            <requestState>
+              <option name="id" value="bd2ac813-bdb0-4929-8b1a-e81269570138" />
+              <option name="method" value="GET" />
+              <option name="name" value="FetchAllBooks" />
+              <option name="url" value="http://localhost:8080/api/books" />
+            </requestState>
+            <requestState>
+              <option name="id" value="1b81999b-48da-4cae-b138-547f053c1587" />
+              <option name="method" value="GET" />
+              <option name="name" value="FetchAllBooksSorted" />
+              <option name="queryParams">
+                <list>
+                  <queryParamState>
+                    <option name="key" value="sort" />
+                    <option name="value" value="publication_year" />
+                  </queryParamState>
+                  <queryParamState>
+                    <option name="key" value="order" />
+                    <option name="value" value="desc" />
+                  </queryParamState>
+                </list>
+              </option>
+              <option name="url" value="GET http://localhost:8080/api/books?sort=publication_year&amp;order=desc" />
+            </requestState>
+            <requestState>
+              <option name="id" value="9533cbd5-2dd5-4b45-97c0-7d7bc6b855be" />
+              <option name="method" value="GET" />
+              <option name="name" value="FetchAllBooksFiltered" />
+              <option name="queryParams">
+                <list>
+                  <queryParamState>
+                    <option name="key" value="author" />
+                    <option name="value" value="Oscar Wilde" />
+                  </queryParamState>
+                </list>
+              </option>
+              <option name="url" value="GET http://localhost:8080/api/books?author=Oscar Wilde" />
+            </requestState>
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;title&quot;: &quot;1984&quot;,&#10;  &quot;author&quot;: &quot;George Orwell&quot;,&#10;  &quot;publicationYear&quot;: 1949,&#10;  &quot;genreId&quot;: &quot;c414bada-73d6-4415-989d-e35a5a24338c&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="1f7bae3c-44dc-4703-9e9a-27584090d25d" />
+              <option name="method" value="POST" />
+              <option name="name" value="CreateBook" />
+              <option name="url" value="POST http://localhost:8080/api/books" />
+            </requestState>
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;name&quot;: &quot;Poetry&quot;,&#10;  &quot;description&quot;: &quot;Poetry is a form of literary art in which language is used for its aesthetic and evocative qualities in addition to, or in lieu of, its apparent meaning.&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="66966157-5239-49b2-ac31-0c884499c6e8" />
+              <option name="method" value="POST" />
+              <option name="name" value="CreateGenre" />
+              <option name="url" value="POST http://localhost:8080/api/genres" />
+            </requestState>
+            <requestState>
+              <option name="id" value="9c329ea1-4f07-4d0a-83ea-7992dfe94cbd" />
+              <option name="method" value="DELETE" />
+              <option name="name" value="DeleteBook" />
+              <option name="url" value="DELETE http://localhost:8080/api/books/60fc5683-8a9e-406e-b555-06e19471287a" />
+            </requestState>
+            <requestState>
+              <option name="id" value="967c4e0d-0042-4bf5-ab85-f119912b3b5e" />
+              <option name="method" value="DELETE" />
+              <option name="name" value="DeleteGenre" />
+              <option name="url" value="DELETE http://localhost:8080/api/genres/21a27e5c-6404-4b31-b4f3-31d13651efd2" />
+            </requestState>
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;title&quot;: &quot;1984&quot;,&#10;  &quot;author&quot;: &quot;Ernest Hemingway&quot;,&#10;  &quot;publicationYear&quot;: 1949,&#10;  &quot;genreId&quot;: &quot;9287e584-4c98-49ab-a4d1-ee7b8a2bd40f&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="69d12656-1953-4e71-b81b-4420cf67e99b" />
+              <option name="method" value="PUT" />
+              <option name="name" value="UpdateBook" />
+              <option name="url" value="PUT http://localhost:8080/api/books/43e67b9b-dbaa-4759-8a67-5a9aa46b6609" />
+            </requestState>
+          </list>
+        </option>
+      </draftsState>
+    </option>
+    <option name="id" value="ddf3422f-d1cf-4a96-b78a-81a2374d0a3b" />
+    <option name="version" value="4" />
+  </component>
+</project>
